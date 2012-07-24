@@ -48,6 +48,7 @@
 
 -(NSNumber *)countCommitsOf:(NSString *)range;
 -(bool)remoteNeedFetch:(NSString *)remote;
+-(void)updateMetaDataForBranches;
 
 @property(strong, readonly) NSMutableArray *items;
 @property(strong, readonly) NSView *sourceListControlsView;

@@ -50,6 +50,8 @@
 +(NSString*)mimeTypeForFileName:(NSString*)file;
 +(BOOL)isImage:(NSString*)file;
 +(BOOL)isDiffHeader:(NSString*)line;
+- (void) updateSearch;
+- (void) updateSearchUI;
 
 - (void) openFileMerge:(NSString*)file sha:(NSString *)sha sha2:(NSString *)sha2;
 
