@@ -63,8 +63,10 @@
 	[repository addObserver:self forKeyPath:@"currentBranchFilter" options:0 context:@"branchFilterChange"];
 
 	forceSelectionUpdate = YES;
+    
 	NSSize cellSpacing = [commitList intercellSpacing];
 	cellSpacing.height = 0;
+    
 	[commitList setIntercellSpacing:cellSpacing];
 	[fileBrowser setTarget:self];
 	[fileBrowser setDoubleAction:@selector(openSelectedFile:)];
