@@ -60,8 +60,7 @@
 @property (unsafe_unretained) IBOutlet PBHistorySearchController *searchController;
 @property (unsafe_unretained) PBCommitList *commitList;
 
-- (IBAction) setDetailedView:(id)sender;
-- (IBAction) setTreeView:(id)sender;
+- (IBAction) selectDetailOrTreeView:(id)sender;
 - (IBAction) setBranchFilter:(id)sender;
 
 - (void)selectCommit:(NSString *)commit;
@@ -88,7 +87,7 @@
 // Find/Search methods
 - (IBAction)selectNext:(id)sender;
 - (IBAction)selectPrevious:(id)sender;
-- (IBAction) updateSearch:(id) sender;
+- (IBAction)updateSearch:(id) sender;
 
 - (void) copyCommitInfo;
 - (void) copyCommitSHA;

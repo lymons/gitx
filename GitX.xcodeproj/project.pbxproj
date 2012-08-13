@@ -745,15 +745,15 @@
 			isa = PBXGroup;
 			children = (
 				A9F7033D15BEA3B0001CF323 /* Images */,
-				FA8DFF37131AEDD400C0F289 /* Start_iTerm2.applescript */,
-				02B41A5F123E307F00DFC531 /* PBCommitHookFailedSheet.xib */,
-				F5F7D0641062E7940072C81C /* UpdateKey.pem */,
-				31DAA7EC1317737100463846 /* gitx_l_pub.pem */,
 				47DBDB920E94F47200671A1E /* Preference Icons */,
 				D26DC6440E782C9000C777B2 /* gitx.icns */,
+				FA8DFF37131AEDD400C0F289 /* Start_iTerm2.applescript */,
+				F5F7D0641062E7940072C81C /* UpdateKey.pem */,
+				31DAA7EC1317737100463846 /* gitx_l_pub.pem */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				D8F01C4A12182F19007F729F /* GitX.sdef */,
+				02B41A5F123E307F00DFC531 /* PBCommitHookFailedSheet.xib */,
 				F5B721C20E05CF7E00AF29DC /* MainMenu.xib */,
 				911111E00E58BD5A00BF76B4 /* RepositoryWindow.xib */,
 				F5E424100EA3E4D60046E362 /* PBDiffWindow.xib */,
@@ -856,9 +856,17 @@
 			name = cli;
 			sourceTree = "<group>";
 		};
+		A9F5163A15D89EC0001404CF /* newImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = newImages;
+			sourceTree = "<group>";
+		};
 		A9F7033D15BEA3B0001CF323 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A9F5163A15D89EC0001404CF /* newImages */,
 				212A499412A3121D009DAFAD /* File Markers */,
 				A9F7033F15BEA3EE001CF323 /* list_Template.png */,
 				A9F7034015BEA3EE001CF323 /* sidebar_Template.png */,

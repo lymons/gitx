@@ -27,8 +27,8 @@
 #import "PBSourceViewCell.h"
 
 #define kHistorySelectedDetailIndexKey @"PBHistorySelectedDetailIndex"
-#define kHistoryDetailViewIndex 0
-#define kHistoryTreeViewIndex 1
+#define kHistoryDetailViewIndex     0
+#define kHistoryTreeViewIndex       1
 
 #define kHistorySplitViewPositionDefault @"History SplitView Position"
 
@@ -287,17 +287,25 @@
     return YES;
 }
 
-- (IBAction) setDetailedView:(id)sender
+
+
+- (IBAction)selectDetailOrTreeView:(id)sender
 {
-	self.selectedCommitDetailsIndex = kHistoryDetailViewIndex;
-	forceSelectionUpdate = YES;
+    NSSegmentedCell *segCell = (NSSegmentedCell *)sender;
+    
+    
+    NSInteger selectedIndex = segCell.selectedSegment;
+    
+    if (selectedIndex == 0) {//detail View
+        self.selectedCommitDetailsIndex = kHistoryDetailViewIndex;
+        forceSelectionUpdate = YES;
+        
+    }else if (selectedIndex == 1){// tree view
+        self.selectedCommitDetailsIndex = kHistoryTreeViewIndex;
+        forceSelectionUpdate = YES;
+    }
 }
 
-- (IBAction) setTreeView:(id)sender
-{
-	self.selectedCommitDetailsIndex = kHistoryTreeViewIndex;
-	forceSelectionUpdate = YES;
-}
 
 - (IBAction) setBranchFilter:(id)sender
 {

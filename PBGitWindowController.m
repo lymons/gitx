@@ -308,25 +308,26 @@
     }
 }
 
+// change the main view layout action
 - (IBAction)changeLayout:(id)sender
 {
-    NSInteger index=[sender selectedSegment];
-    NSSplitView *splitView=[splitViews objectAtIndex:index];
-    NSView *left=[[splitView subviews] objectAtIndex:0];
+    NSInteger index = [sender selectedSegment];
+    NSSplitView *splitView = [splitViews objectAtIndex:index];
+    NSView *left = [[splitView subviews] objectAtIndex:0];
     
     CGFloat pos;
     if ([splitView isSubviewCollapsed:left])
-        pos=[[splitViewsSize objectAtIndex:index] intValue];
+        pos = [[splitViewsSize objectAtIndex:index] intValue];
     else
-        pos=[splitView minPossiblePositionOfDividerAtIndex:0];
+        pos = [splitView minPossiblePositionOfDividerAtIndex:0];
 
     [splitView setPosition:pos ofDividerAtIndex:0 ];
 }
 
 - (void)resizeSubviewsHandler:(NSNotification *)notif
 {
-    NSSplitView *splitView=[notif object];
-    NSInteger index=[splitViews indexOfObject:splitView];
+    NSSplitView *splitView = [notif object];
+    NSInteger index = [splitViews indexOfObject:splitView];
     NSView *left=[[splitView subviews] objectAtIndex:0];
 
     NSNumber *pos;

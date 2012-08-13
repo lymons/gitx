@@ -61,7 +61,7 @@
 - (BOOL)showsIndexSheetButton;
 - (void)setAutostarts:(BOOL)fp8;
 - (BOOL)autostarts;
-- (void)setPlaysDuringPanelAnimation:(BOOL)fp8;
+- (void)setPlaysDuringPanelAnimation:(BOOL)fp8;   
 - (BOOL)playsDuringPanelAnimation;
 - (void)setDeferredLoading:(BOOL)fp8;
 - (BOOL)deferredLoading;
