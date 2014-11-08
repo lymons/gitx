@@ -14,3 +14,13 @@ GitX.xcodeproj/xcuserdata/Coolin006.xcuserdatad/xcschemes/cli tool.xcscheme
 GitX.xcodeproj/xcuserdata/Coolin006.xcuserdatad/xcschemes/gitx_askpasswd.xcscheme
 
 GitX.xcodeproj/xcuserdata/Coolin006.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*.xccheckout
+
+*.xcuserstate
+
+*.xcsettings
+
+*.xcscheme
+
+*.plist
